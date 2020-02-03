@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+    <title>Join the First Order</title>
+    <style>
+        body, html {
+        margin: 0px;
+        padding: 0px;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+        }
+
+        .backgroundImage {
+          height: 100vh;
+          width: 100vw;
+          position: absolute;
+        }
+        
+        .firstOrderLogo {
+          height: 140px;
+          position: absolute;
+          display: block;
+          margin-right: 45%;
+          margin-left: 46%;
+          margin-top: 20px;
+          z-index: 10;
+          -webkit-transition: -webkit-transform 1s ease-in-out;
+          transition: transform 1s ease-in-out;
+        }
+
+        .homeTitle {
+          position: absolute;
+          color: white;
+          font-size: 64px;
+          margin-top: 240px;
+          height: auto;
+          width: 100%;
+          text-align: center;
+        }
+
+        @font-face {
+  font-family: StarWars;
+  src: url('/assets/fonts/SFDistantGalaxy.ttf');
+}
+    </style>
+</head>
+<body>
+  <img class="backgroundImage" src="/assets/images/galaxy2.jpg" id="home">
+  <div class="homeTitle" style="font-size: 42px; font-family: 'StarWars';">
+      Reclaim the Empire
+      <br>
+      Join the
+      <img class="firstOrderLogo" src="/assets/images/2000px-Emblem_of_the_First_Order.svg.png">
+      <h1 style="font-family:'StarWars' ; font-size: 112px;">First Order</h1>
+    </div>
+    <div class="NavWrapper">
+      <ul>
+        <li><a href="#" id="about"><span class="navSpan">About Us</span></a></li>
+        <li><a href="#" id="join"><span class="navSpan">Join</span></a></li>
+        <li><a href="#home"><span class="navSpan" style="color: #d60e0e;">Home</span></a></li>
+        <li><a href="#" id="contact"><span class="navSpan">Contact</span></a></li>
+        <li><a href="#store" class="navSpan"><span>Store</span></a></li>
+    </ul>
+ </div>
+ <div class="lightsaberContainer">
+   <div id="filter"></div>
+   <img src="/assets/images/trooper.jpg" class="trooper">
+  </div>
+<div class="tie-fighterContainer">
+  <div id="fighterAnimation">
+    <img src="/assets/images/FAVPNG_star-wars-tie-fighter-first-order-x-wing-starfighter_XFBzcb4b.png" class="fighter">
+  </div>
+</div>
+<div class="secondViewHeight" id="store">
+  <div class="cardContainer">
+    <table class="card-table">
+      <tr>
+        <td>
+          <div class="card" id="card1">
+            <img src="">
+          </div>
+        </td>
+        <td>
+          <div class="card" id="card2"></div>
+        </td>
+        <td>
+          <div class="card" id="card3"></div>
+
+        </td>
+        <td>
+          <div class="card" id="card4"></div>
+
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="card" id="card5"></div>
+
+        </td>
+        <td>
+          <div class="card" id="card6"></div>
+
+        </td>
+        <td>
+          <div class="card" id="card7"></div>
+
+        </td>
+        <td>
+          <div class="card" id="card8"></div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+</body>
+<script src="js/expand.js"></script>
+<script src="js/route.js"></script>
+</html>

@@ -1,0 +1,63 @@
+.lightsaberContainer {
+    height: 80vh;
+    width: 200px;
+    /* outline: 1px solid white; */
+    position: relative;
+    transform: skewX(45deg);
+    background-color: white;
+    outline: 3px solid rgba(255,255,255,.2);
+    box-shadow: 0 0 40px 40px rgba(255, 255, 255, .3),
+                0 0 100px 60px rgba(175, 0, 0, .9),
+                0 0 140px 90px rgba(175, 0, 0, .9);
+    overflow: hidden;
+    margin-top: 20vh;
+    z-index: 10;
+}
+
+.trooper{
+    position: absolute;
+    top: -9820px;
+    left: -9999px;
+    right: -9850px;
+    bottom: -9999px;
+    margin: auto;
+    transform: skewX(-45deg);
+    width: 600px;
+    height: 500px;
+  }
+
+#filter {
+    background-color: rgba(175, 0, 0, .9);
+    height: 110%;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+}
+
+.fighter {
+    position: absolute;
+    z-index: 11;
+    height: 150px;
+    width: 150px;
+    top: 0;
+    right: 0;
+    margin-top: 100px;
+    animation: slide 5s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translatex(0px) translatey(0px)
+    }
+
+    10% {
+        transform: translatex(-800px) translatey(-250px);
+        height: 120px; width: 120px;
+    }
+
+    100% {
+        transform: translatex(-800px) translatey(-250px);
+        height: 120px; width: 120px;
+
+    }
+}
